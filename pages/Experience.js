@@ -3,7 +3,7 @@ import React from 'react'
 import images from '../assets/images'
 import { Button as ButtonPaper } from 'react-native-paper';
 
-const Experience = () => {
+const Experience = ({navigation}) => {
   return (
     <View style={styles.container}>
         <View style={styles.View}>
@@ -25,7 +25,7 @@ const Experience = () => {
             <Text style={styles.paragraph}>Nos partenaires de confiance et nous utilisons des technologies de traking pour collecter des données sur la manière dont vous utilisez Go To Eat, en vue d’améliorer et de personnaliser votre expérience, de renforcer la sécurité.</Text>
             <Text style={{fontWeight:'bold', textAlign:'center', marginTop:"2%", textDecorationLine:"underline"}}>Politique de confidentialité</Text>
 
-            <ButtonPaper style={{backgroundColor:"#cc0066", marginTop:"5%"}} mode='contained' icon="arrow-right">ACCEPTER ET CONTINUER</ButtonPaper>
+            <ButtonPaper style={{backgroundColor:"#cc0066", marginTop:"5%"}} mode='contained' icon="arrow-right" onPress={()=> navigation.navigate('Signup')}>ACCEPTER ET CONTINUER</ButtonPaper>
 
         </View>
     </View>
