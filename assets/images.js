@@ -5,6 +5,7 @@ const vector2 = require("../assets/images/VECTOR-02.svg");
 const vector3 = require("../assets/images/VECTOR-03.svg");
 const vector4 = require("../assets/images/VECTOR-04.svg");
 const eat = require('../assets/images/eat.svg')
+const experience = require('../assets/images/experience.svg')
 
 
 export default {
@@ -14,5 +15,6 @@ export default {
     vector2,
     vector3,
     vector4,
-    eat
+    eat,
+    experience
 }
