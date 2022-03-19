@@ -3,7 +3,7 @@ import React from 'react'
 import images from '../assets/images'
 import { Button as ButtonPaper } from 'react-native-paper';
 
-const HowItWork = () => {
+const HowItWork = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.View}>
@@ -69,7 +69,7 @@ const HowItWork = () => {
 
             </View>
         </View>
-        <ButtonPaper style={{backgroundColor:"#cc0066"}} mode='contained' icon="arrow-right">SUIVANT</ButtonPaper>
+        <ButtonPaper style={{backgroundColor:"#cc0066"}} mode='contained' icon="arrow-right" onPress={() => navigation.navigate('Experience')}>SUIVANT</ButtonPaper>
       </View>
     </View>
   )

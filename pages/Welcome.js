@@ -3,7 +3,7 @@ import React from 'react'
 import images from '../assets/images'
 import { Button as ButtonPaper } from 'react-native-paper';
 
-const Welcome = () => {
+const Welcome = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.View}>
@@ -25,7 +25,11 @@ const Welcome = () => {
                 marginBottom:"12%"
             }}
         />
-        <ButtonPaper style={{backgroundColor:"#cc0066"}} mode='contained' icon="arrow-right">GO</ButtonPaper>
+        <ButtonPaper 
+            style={{backgroundColor:"#cc0066"}}
+            mode='contained'
+            icon="arrow-right"
+            onPress={() => navigation.navigate('HowItWork')}>GO</ButtonPaper>
       </View>
     </View>
   )
@@ -47,12 +51,12 @@ const styles = StyleSheet.create({
     title:{
         fontSize:23,
         fontWeight:"bold",
-        marginBottom:"10%"
+        marginBottom:"5%"
     },
     paragraph:{
         fontSize:19,
         textAlign:"center",
         color:"gray",
-        marginBottom:"15%"
+        marginBottom:"10%"
     }
 })
