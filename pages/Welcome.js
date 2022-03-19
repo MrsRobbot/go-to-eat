@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, Button } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 import images from '../assets/images'
 import { Button as ButtonPaper } from 'react-native-paper';
@@ -25,7 +25,7 @@ const Welcome = () => {
                 marginBottom:"12%"
             }}
         />
-        <ButtonPaper mode='contained' icon="arrow-right">GO</ButtonPaper>
+        <ButtonPaper style={{backgroundColor:"#cc0066"}} mode='contained' icon="arrow-right">GO</ButtonPaper>
       </View>
     </View>
   )
