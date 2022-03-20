@@ -9,6 +9,7 @@ const experience = require('../assets/images/experience.svg')
 const signup = require('../assets/images/signup.svg')
 const login = require('../assets/images/login.svg')
 const search = require('../assets/images/search.svg')
+const food1 = require('../assets/images/food1.jpg')
 
 
 export default {
@@ -22,5 +23,6 @@ export default {
     experience,
     signup,
     login,
-    search
+    search,
+    food1
 }

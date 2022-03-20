@@ -3,7 +3,7 @@ import React from 'react'
 import images from '../assets/images'
 import { Button as ButtonPaper, TextInput } from 'react-native-paper';
 
-const Accueil = () => {
+const Accueil = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.View}>
